@@ -393,7 +393,7 @@ function channelGenerateName(){
 }
 
 function informationsURL(id){
-	return "http://localhost:3000/show/match?id="+id;
+	return "http://stream.ultimedecathlon.com:3333/show/match?id="+id;
 }
 
 function close(msg){
