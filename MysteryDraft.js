@@ -121,7 +121,6 @@ function enter(msg){
 				msg.reply("Déjà 2 joueurs dans le match : "+currentMatch.players[1].name+" vs "+currentMatch.players[0].name);
 			}
 		}
-		saveMatch(msg.channel.id);
 		ready(msg);
 	}
 }
