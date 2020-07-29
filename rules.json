@@ -1,4 +1,4 @@
-{"T":{
+{	"T":{
 	  "name":"Tetris",
 	  "rules":[["10 minutes pour faire le plus de lignes!"],["Choix du level initial libre","Level 0", "Level 3","Level 5","Level 7"]]
     },
@@ -13,19 +13,19 @@
     },
     "TM":{
 	  "name":"Trackmania",
-	  "rules":[["Compléter le plus d'objectifs en 15 minutes"],["track1 - 0:47:00\ntrack2 - 0:47:00\ntrack3 - 0:47:00\ntrack4 - 0:47:00\ntrack5 - 0:47:00\ntrack6 - 0:47:00"]]
+	  "rules":[["Compléter le plus d'objectifs avec 2 try par map"],["trackmania.json"]]
     },
-    "HL":{
-	  "name":"Hot Lava",
-	  "rules":[["truc"],["machin"]]
+    "DH":{
+	  "name":"Dishonored",
+	  "rules":[["Compléter la mission 2 (Dishonored) sans save ni glitches majeurs en Ghost"],["Ramasser toutes les runes","Ramasser toutes les peintures","Ramasser tous les charmes"]]
     },
     "SL":{
 	  "name":"SwarmLake",
-      "rules":[["truc"],["machin"]]
+      "rules":[["Meilleur score"],["1 essai"]]
     },
     "IR":{
 	  "name":"Immortal Redneck",
-      "rules":[["truc"],["machin"]]
+      "rules":[["Daily"],["Meilleur Score"]]
     },
     "CDG":{
 	  "name":"Curse of the dead gods",
@@ -33,7 +33,7 @@
     },
     "TS":{
 	  "name":"The Swindle",
-	  "rules":[["Récupérer le plus d'argent possible en 40 minutes"],["Bombes interdites","HACK 3 interdit", "Double Saut interdit","Toutes les upgrades sont autorisées"]]
+	  "rules":[["Récupérer le plus d'argent possible en 40 minutes"],["Fin de la run quand Henry Beresford meurt","Pas de double saut","Bombes interdites","HACK 3 interdit", "Pas d'amélioration de dégats","Toutes les upgrades sont autorisées"]]
     },
     "GD":{
 	  "name":"Geommetry Dash",
@@ -41,7 +41,7 @@
     },
     "LM":{
 	  "name":"Lonely Mountains",
-	  "rules":[["Daily"],["20 minutes","15 minutes","25 minutes","30 minutes"]]
+	  "rules":[["Daily"],["20 minutes","25 minutes","30 minutes"]]
     },
     "MM":{
 	  "name":"Mini Metro",
@@ -61,7 +61,7 @@
     },
     "MZM":{
 	  "name":"Metroid: Zero Mission",
-	  "rules":[["pouet"],["pouet"]]
+	  "rules":[["Config : dv45AAAAAAAAAAAAAAAAggAgWuH - Seed : %rand9%"],["pouet"]]
     },
     "PB":{
 	  "name":"Power Bomberman",
