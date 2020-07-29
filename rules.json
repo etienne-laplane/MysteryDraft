@@ -1,70 +1,69 @@
-{"T":{
+{	"T":{
 	  "name":"Tetris",
-	  "rules":[["10 minutes pour faire le plus de lignes!"],["Choix du level initial libre","Level 0", "Level 3","Level 5","Level 7"]]
+	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
     },
     "ALTTP":{
 	  "name":"A link to the past",
-	  "rules":[["Bingo"],["seed : http://speedruntools.com/bingo/alttp?seed=%rand6%&mode=short"]]
+	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
     },
     "TT":{
 	  "name":"Tricky Towers",
-	  "rules":[["Versus"],["Random, Random, SuperCoupe","Random, Normal, SuperCoupe"]]
-
+	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
     },
     "TM":{
 	  "name":"Trackmania",
-	  "rules":[["Compléter le plus d'objectifs en 15 minutes"],["track1 - 0:47:00\ntrack2 - 0:47:00\ntrack3 - 0:47:00\ntrack4 - 0:47:00\ntrack5 - 0:47:00\ntrack6 - 0:47:00"]]
+	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
     },
-    "HL":{
-	  "name":"Hot Lava",
-	  "rules":[["truc"],["machin"]]
-    },
+    "DH":{
+	  "name":"Dishonored",
+	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
+	  },
     "SL":{
 	  "name":"SwarmLake",
-      "rules":[["truc"],["machin"]]
+      "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
     },
     "IR":{
 	  "name":"Immortal Redneck",
-      "rules":[["truc"],["machin"]]
+      "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
     },
     "CDG":{
 	  "name":"Curse of the dead gods",
-	  "rules":[["Finir le challenge en faisant le plus de room sans prendre de dégats."],["Jaguar 1","Jaguar 2","Jaguar 3","Jaguar 4","Serpent 1","Serpent 2","Serpent 3","Serpent 4"]]
+	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
     },
     "TS":{
 	  "name":"The Swindle",
-	  "rules":[["Récupérer le plus d'argent possible en 40 minutes"],["Bombes interdites","HACK 3 interdit", "Double Saut interdit","Toutes les upgrades sont autorisées"]]
+	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
     },
     "GD":{
 	  "name":"Geommetry Dash",
-	  "rules":[["Aller le plus loin possible"],["niveau 1","niveau 2","niveau 3"]]
+	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
     },
     "LM":{
 	  "name":"Lonely Mountains",
-	  "rules":[["Daily"],["20 minutes","15 minutes","25 minutes","30 minutes"]]
+	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
     },
     "MM":{
 	  "name":"Mini Metro",
-	  "rules":[["ville"],["contrainte"]]
+	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
     },
     "ITB":{
 	  "name":"Into The Breach",
-	  "rules":[["compléter 2 iles et finir le jeu","compléter 3 iles et finir le jeu","compléter 4 iles et finir le jeu"],["2 membres de l'équipe au choix, puis le dernier membre au choix de l'adversaire"]]
+	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
     },
     "TF":{
 	  "name":"Thunder Force 4",
-	  "rules":[["Scoring"],["good luck"]]
+	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
     },
     "OH":{
 	  "name":"Open Hexagon",
-	  "rules":[["pouet"],["pouet"]]
+	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
     },
     "MZM":{
 	  "name":"Metroid: Zero Mission",
-	  "rules":[["pouet"],["pouet"]]
+	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
     },
     "PB":{
 	  "name":"Power Bomberman",
-	  "rules":[["aha"],["STAGE 6"]]
+	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
     }
 }

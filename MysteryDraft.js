@@ -7,7 +7,7 @@ const bot = new Discord.Client();
 var fs = require('fs');
 var match={};
 var banAmount=12;
-var selection=["T","ALTTP","TT","TM","HL","SL","IR","CDG","TS","GD","LM","MM","ITB","TF","OH","MZM","PB"];
+var selection=["T","ALTTP","TT","TM","D","SL","IR","CDG","TS","GD","LM","MM","ITB","TF","OH","MZM","PB"];
 
 
 bot.on('message', msg => {
@@ -82,6 +82,9 @@ function start(msg){
 	console.log(nom.replace("x-v",msg.author.tag.split("#")[0]+"-v"));
 		msg.guild.channels.create(nom.replace("X-v",msg.author.tag.split("#")[0]+"-v"), 'text').then(function(result){
 		channel_id = result.id;
+		let category = server.channels.cache.find(c => c.name == "Text Channels" && c.type == "LIVE-RACES");
+		if (!category) throw new Error("Category channel does not exist");
+		result.setParent(category.id);
 		msg.reply("Match démarré dans le salon "+result.toString()+"\nOverlay : "+informationsURL(channel_id));
 		match[channel_id]=newmatch();
 		currentMatch=match[channel_id];
@@ -140,7 +143,7 @@ function ready(msg){
 				startMatch(msg);
 			}
 		}
-		saveMatch(msg.channel.id);
+		
 	}
 }
 
@@ -172,8 +175,6 @@ function startMatch(msg){
 						 "[MZM] Metroid: Zero Mission \n"+
 						 "[PB] Power Bomberman ",{code:true});
 							});
-
-
 		saveMatch(msg.channel.id);
 	}
 }
@@ -226,16 +227,12 @@ function ban(msg,jeu){
 							msg.channel.send(gameList,{code:true});
 							})
 							.catch(console.error);
-
+							saveMatch(msg.channel.id);
 						}
 					}
-					
-						
-					
 				}
 			}
-		}
-		saveMatch(msg.channel.id);
+		}	
 	}
 }
 
@@ -264,6 +261,9 @@ function printOrder(msg,games){
 function nextGame(msg){
 	var currentMatch = match[msg.channel.id];
 	if (currentMatch!=null){
+		selection.forEach(function(element){
+			currentMatch.games[element].current=false;
+		});
 		var curOrder=2;
 		var curGame="";
 		selection.forEach(function(element){
@@ -282,13 +282,53 @@ function nextGame(msg){
 			msg.channel.send(race_results,{code:true});
 			//foreach game, afficher le winner
 		}else{
+			currentMatch.games[element].current=true;
 			msg.channel.send("Prochain jeu : "+rule[curGame].name + " !");
 			var obj = rule[curGame].rules[0][Math.floor(Math.random() * rule[curGame].rules[0].length)];
 			var detail = rule[curGame].rules[1][Math.floor(Math.random() * rule[curGame].rules[1].length)];
-			detail = detail.replace("%rand6%",Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random()));
+			if(detail.endsWith(".json")){
+				var cur_rul = require('./'+detail+'.json');
+				var amount = cur_rul.volume;
+				detail=randomizeRuleTab(amount,cur_rul.rules);
+			}
+			detail = detail.replace("%rand6%",Math.floor(Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random()));
+			detail = detail.replace("%rand9%",Math.floor(Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random()));
 			msg.channel.send(obj+"\n"+detail,{code:true});
+			currentMatch.games[element].rules[0]=obj;
+			currentMatch.games[element].rules[1]=detail;
+			saveMatch(msg.channel.id);
 		}
 	}
+}
+
+function randomizeRuleTab(n,tab){
+	var toReturn="";
+	var rules=shuffle(tab);
+	var i=n;
+	while (i>0){
+		toReturn=toReturn+rules.pop()+"\n";
+		i--;
+	}
+	return toReturn;
+}
+
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
 }
 
 function amIinthematch(msg){
@@ -465,8 +505,6 @@ function printResult(msg,match){
 		i=n;
 		n=2;
 	}
-	
-	
 		selectionOrd.forEach(function(element){
 
 				if(games[element].status=="PICKED"){
@@ -485,11 +523,7 @@ function printResult(msg,match){
 					}
 				}
 				listeOrd+=curName+" - "+curWinner+"\n";
-
-			
 		});
-		
-
 	listeOrd = match.players[0].name.split("#")[0] +"  "+player1+" - "+player2+ "  "+match.players[1].name.split("#")[0]+"\n"+listeOrd; 
 	if(player1>player2){
 		match.players[0].status="WINNER";
