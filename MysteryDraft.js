@@ -341,7 +341,7 @@ function changewin(msg,jeu){
 		}
 		currentMatch.games[jeu].winner=msg.author.id;
 		msg.channel.send("Correction : "+msg.author.tag.split("#")[0]+" gagne le match de "+currentMatch.games[jeu].name);
-		saveMatch(msg.channel.id);
+		result(msg);
 	}
 }
 
@@ -381,7 +381,7 @@ function changedraw(msg,jeu){
 		}
 		currentMatch.games[jeu].winner=0;
 		msg.channel.send("Correction : égalité sur le match de "+currentMatch.games[jeu].name);
-		saveMatch(msg.channel.id);
+		result(msg);
 	}
 }
 
@@ -392,7 +392,7 @@ function channelGenerateName(){
 }
 
 function informationsURL(id){
-	return "http://stream.ultimedecathlon.com:3333/show/match?id="+id;
+	return "http://stream.ultimedecathlon.com:8080/show/match?id="+id;
 }
 
 function close(msg){
@@ -465,7 +465,7 @@ function printResult(msg,match){
 		i=n;
 		n=2;
 	}
-	console.log(selectionOrd);
+	
 	
 		selectionOrd.forEach(function(element){
 
