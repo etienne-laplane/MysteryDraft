@@ -82,7 +82,7 @@ function start(msg){
 	console.log(nom.replace("x-v",msg.author.tag.split("#")[0]+"-v"));
 		msg.guild.channels.create(nom.replace("X-v",msg.author.tag.split("#")[0]+"-v"), 'text').then(function(result){
 		channel_id = result.id;
-		let category = server.channels.cache.find(c => c.name == "Text Channels" && c.type == "LIVE-RACES");
+		let category = msg.guild.channels.cache.find(c => c.name == "LIVE-RACES");
 		if (!category) throw new Error("Category channel does not exist");
 		result.setParent(category.id);
 		msg.reply("Match démarré dans le salon "+result.toString()+"\nOverlay : "+informationsURL(channel_id));
@@ -291,8 +291,8 @@ function nextGame(msg){
 				var amount = cur_rul.volume;
 				detail=randomizeRuleTab(amount,cur_rul.rules);
 			}
-			detail = detail.replace("%rand6%",Math.floor(Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random()));
-			detail = detail.replace("%rand9%",Math.floor(Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random()));
+			detail = detail.replace("%rand6%",Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random()));
+			detail = detail.replace("%rand9%",Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random()));
 			msg.channel.send(obj+"\n"+detail,{code:true});
 			currentMatch.games[element].rules[0]=obj;
 			currentMatch.games[element].rules[1]=detail;
@@ -488,6 +488,7 @@ function printResult(msg,match){
 	var listeOrd="";
 	var i=-1;
 	var n=2;
+	var update=true;
 	var selectionOrd=[];
 	for(let j=0;j<(17-banAmount);j++){
 		selection.forEach(function(element){
@@ -519,19 +520,20 @@ function printResult(msg,match){
 						curWinner="Winner : "+match.players[1].name.split("#")[0];
 					}
 					else{
+						update=false;
 						curWinner="Pas encore joué";
 					}
 				}
 				listeOrd+=curName+" - "+curWinner+"\n";
 		});
 	listeOrd = match.players[0].name.split("#")[0] +"  "+player1+" - "+player2+ "  "+match.players[1].name.split("#")[0]+"\n"+listeOrd; 
-	if(player1>player2){
+	if(player1>player2&&update){
 		match.players[0].status="WINNER";
 		match.players[1].status="LOSER";
-	}else if(player2>player1){
+	}else if(player2>player1&&update){
 		match.players[0].status="LOSER";
 		match.players[1].status="WINNER";
-	}else{
+	}else if(update){
 		match.players[0].status="DRAW";
 		match.players[1].status="DRAW";
 	}
