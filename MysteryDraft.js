@@ -282,7 +282,7 @@ function nextGame(msg){
 			msg.channel.send(race_results,{code:true});
 			//foreach game, afficher le winner
 		}else{
-			currentMatch.games[element].current=true;
+			currentMatch.games[curGame].current=true;
 			msg.channel.send("Prochain jeu : "+rule[curGame].name + " !");
 			var obj = rule[curGame].rules[0][Math.floor(Math.random() * rule[curGame].rules[0].length)];
 			var detail = rule[curGame].rules[1][Math.floor(Math.random() * rule[curGame].rules[1].length)];
