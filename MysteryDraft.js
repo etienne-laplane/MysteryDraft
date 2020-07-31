@@ -7,7 +7,7 @@ const bot = new Discord.Client();
 var fs = require('fs');
 var match={};
 var banAmount=12;
-var selection=["T","ALTTP","TT","TM","D","SL","IR","CDG","TS","GD","LM","MM","ITB","TF","OH","MZM","PB"];
+var selection=["T","ALTTP","TT","TM","DH","SL","IR","CDG","TS","RPM","LM","MM","ITB","TF","OH","MZM","PB"];
 
 
 bot.on('message', msg => {
@@ -161,12 +161,12 @@ function startMatch(msg){
 						 "[ALTTP] A link to the past\n"+
 						 "[TT] Tricky Towers \n"+
 						 "[TM] Trackmania \n"+
-						 "[HL] Hot Lava \n"+
+						 "[DH] Dishonored \n"+
 						 "[SL] SwarmLake \n"+
 						 "[IR] Immortal Redneck \n"+
 						 "[CDG] Curse of the dead gods \n"+
 						 "[TS] The Swindle \n"+
-						 "[GD] Geommetry Dash \n"+
+						 "[RPM] Rythm Paradise Megamix \n"+
 						 "[LM] Lonely Mountains \n"+
 						 "[MM] Mini Metro \n"+
 						 "[ITB] Into The Breach \n"+

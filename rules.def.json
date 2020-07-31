@@ -35,9 +35,9 @@
 	  "name":"The Swindle",
 	  "rules":[["Récupérer le plus d'argent possible en 40 minutes"],["Fin de la run quand Henry Beresford meurt","Pas de double saut","Bombes interdites","HACK 3 interdit", "Pas d'amélioration de dégats","Toutes les upgrades sont autorisées"]]
     },
-    "GD":{
-	  "name":"Geommetry Dash",
-	  "rules":[["Aller le plus loin possible"],["niveau 1","niveau 2","niveau 3"]]
+    "RPM":{
+	  "name":"Rythm Paradise Megamix",
+	  "rules":[["Roger"],["Robert"]]
     },
     "LM":{
 	  "name":"Lonely Mountains",
