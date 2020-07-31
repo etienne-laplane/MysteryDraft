@@ -35,9 +35,9 @@
 	  "name":"The Swindle",
 	  "rules":[["Récupérer le plus d'argent possible en 40 minutes"],["Fin de la run quand Henry Beresford meurt","Pas de double saut","Bombes interdites","HACK 3 interdit", "Pas d'amélioration de dégats","Toutes les upgrades sont autorisées"]]
     },
-    "RPM":{
-	  "name":"Rythm Paradise Megamix",
-	  "rules":[["Roger"],["Robert"]]
+    "MMX":{
+	  "name":"Megaman X 1-3",
+	  "rules":[["Compléter une ligne en 40minutes"],["seed : http://speedruntools.com/bingo/mmx1-3?seed=%rand6%"]]
     },
     "LM":{
 	  "name":"Lonely Mountains",

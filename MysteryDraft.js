@@ -7,7 +7,7 @@ const bot = new Discord.Client();
 var fs = require('fs');
 var match={};
 var banAmount=12;
-var selection=["T","ALTTP","TT","TM","DH","SL","IR","CDG","TS","RPM","LM","MM","ITB","TF","OH","MZM","PB"];
+var selection=["T","ALTTP","TT","TM","DH","SL","IR","CDG","TS","MMX","LM","MM","ITB","TF","OH","MZM","PB"];
 
 
 bot.on('message', msg => {
@@ -166,7 +166,7 @@ function startMatch(msg){
 						 "[IR] Immortal Redneck \n"+
 						 "[CDG] Curse of the dead gods \n"+
 						 "[TS] The Swindle \n"+
-						 "[RPM] Rythm Paradise Megamix \n"+
+						 "[MMX] Megaman X 1-3 \n"+
 						 "[LM] Lonely Mountains \n"+
 						 "[MM] Mini Metro \n"+
 						 "[ITB] Into The Breach \n"+
