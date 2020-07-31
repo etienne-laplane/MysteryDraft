@@ -95,8 +95,8 @@
       "winner": null,
 	  "order":0
     },
-    "GD":{
-	  "name":"Geommetry Dash",
+    "RPM":{
+	  "name":"Rythm Paradise Megamix",
 	  "current":false,
 	  "rules":["",""],
       "status": "AWAITING",
