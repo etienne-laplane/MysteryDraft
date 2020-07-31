@@ -294,8 +294,8 @@ function nextGame(msg){
 			detail = detail.replace("%rand6%",Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random()));
 			detail = detail.replace("%rand9%",Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random()));
 			msg.channel.send(obj+"\n"+detail,{code:true});
-			currentMatch.games[element].rules[0]=obj;
-			currentMatch.games[element].rules[1]=detail;
+			currentMatch.games[curGame].rules[0]=obj;
+			currentMatch.games[curGame].rules[1]=detail;
 			saveMatch(msg.channel.id);
 		}
 	}
