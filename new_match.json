@@ -95,8 +95,8 @@
       "winner": null,
 	  "order":0
     },
-    "RPM":{
-	  "name":"Rythm Paradise Megamix",
+    "MMX":{
+	  "name":"Megaman X 1-3",
 	  "current":false,
 	  "rules":["",""],
       "status": "AWAITING",
