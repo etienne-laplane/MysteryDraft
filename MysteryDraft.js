@@ -12,11 +12,11 @@ var selection=["T","ALTTP","TT","TM","DH","SL","IR","CDG","TS","MMX","LM","MM","
 
 bot.on('message', msg => {
 	var args=msg.content.split(' ');
-	if (args[0]=="!start"){
+	if (args[0]=="!match"||args[0]=="!MD"){
 		//TODO : verif qu'on est dans un chan autorisé
 		start(msg);
 	}
-	if (args[0]=="!enter"){
+	if (args[0]=="!enter"||args[0]=="!entrer"||args[0]=="!join"){
 		enter(msg);
 	}
 	if (args[0]=="!ready"){
@@ -38,10 +38,10 @@ bot.on('message', msg => {
 		changewin(msg,args[1].toUpperCase());
 		}
 	}
-	if (args[0]=="!égalité"){
+	if (args[0]=="!égalité"||args[0]=="!draw"){
 		draw(msg);
 	}
-	if (args[0]=="!changeégalité"){
+	if (args[0]=="!changeégalité"||args[0]=="!changedraw"){
 		if(args[1]!=null){
 		changedraw(msg,args[1].toUpperCase());
 		}
@@ -574,8 +574,13 @@ function forceclose(msg){
 }
 
 function help(msg){
-	msg.reply("JOUER AU JEU GG !\n"+
-			  "!enter = entrer"
+	msg.reply("!MD : starts a match - démarrer un match\n"+
+			  "!enter : Join the match (the creator auto joins) - rejoindre un match, le créateur est déjà dedans\n"+
+			  "!ban <game> : Ban the game - ban le jeu\n"+
+			  "!win : You won - Vous avez gagné le jeu\n"+
+			  "!draw : The match is a draw - égalité sur le jeu\n"+
+			  "!result : affiche les résultats du match\n"+
+			  "!close : when the 5 games are played, closes the match - Quand les 5 jeux ont été joués, ferme le match"
 	,{code:true});
 }
 
