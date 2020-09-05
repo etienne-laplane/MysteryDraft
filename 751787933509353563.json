@@ -1,0 +1,227 @@
+{
+	"players": [
+		{
+			"id": "381119976872083456",
+			"name": "UltimeDecathlon#8489",
+			"status": "WINNER",
+			"ready": true
+		},
+		{
+			"id": "98810512950726656",
+			"name": "Twyn#9127",
+			"status": "LOSER",
+			"ready": true
+		}
+	],
+	"games": {
+		"T": {
+			"name": "Tetris",
+			"current": false,
+			"rules": [
+				"",
+				""
+			],
+			"status": "BANNED",
+			"banned_by": "381119976872083456",
+			"winner": null,
+			"order": 0
+		},
+		"ALTTP": {
+			"name": "A link to the past",
+			"current": false,
+			"rules": [
+				"",
+				""
+			],
+			"status": "BANNED",
+			"banned_by": "98810512950726656",
+			"winner": null,
+			"order": 0
+		},
+		"TT": {
+			"name": "Tricky Towers",
+			"current": false,
+			"rules": [
+				"",
+				""
+			],
+			"status": "BANNED",
+			"banned_by": "98810512950726656",
+			"winner": null,
+			"order": 0
+		},
+		"TM": {
+			"name": "Trackmania",
+			"current": false,
+			"rules": [
+				"",
+				""
+			],
+			"status": "BANNED",
+			"banned_by": "381119976872083456",
+			"winner": null,
+			"order": 0
+		},
+		"DH": {
+			"name": "Dishonored",
+			"current": false,
+			"rules": [
+				"Compléter la mission 2 (Dishonored) sans save ni glitches majeurs en non Lethal",
+				"Ramasser le plus de pièces possible"
+			],
+			"status": "PICKED",
+			"banned_by": null,
+			"winner": "381119976872083456",
+			"order": 0.4394825574522272
+		},
+		"SL": {
+			"name": "SwarmLake",
+			"current": false,
+			"rules": [
+				"",
+				""
+			],
+			"status": "BANNED",
+			"banned_by": "98810512950726656",
+			"winner": null,
+			"order": 0
+		},
+		"IR": {
+			"name": "Immortal Redneck",
+			"current": false,
+			"rules": [
+				"",
+				""
+			],
+			"status": "BANNED",
+			"banned_by": "98810512950726656",
+			"winner": null,
+			"order": 0
+		},
+		"CDG": {
+			"name": "Curse of the dead gods",
+			"current": false,
+			"rules": [
+				"",
+				""
+			],
+			"status": "BANNED",
+			"banned_by": "381119976872083456",
+			"winner": null,
+			"order": 0
+		},
+		"TS": {
+			"name": "The Swindle",
+			"current": false,
+			"rules": [
+				"",
+				""
+			],
+			"status": "BANNED",
+			"banned_by": "98810512950726656",
+			"winner": null,
+			"order": 0
+		},
+		"MMX": {
+			"name": "Megaman X 1-3",
+			"current": false,
+			"rules": [
+				"",
+				""
+			],
+			"status": "BANNED",
+			"banned_by": "98810512950726656",
+			"winner": null,
+			"order": 0
+		},
+		"LM": {
+			"name": "Lonely Mountains",
+			"current": false,
+			"rules": [
+				"Track : Sierra Rivera 2",
+				"Bike : PaceBreaker"
+			],
+			"status": "PICKED",
+			"banned_by": null,
+			"winner": "381119976872083456",
+			"order": 0.9784651814225749
+		},
+		"MM": {
+			"name": "Mini Metro",
+			"current": false,
+			"rules": [
+				"",
+				""
+			],
+			"status": "BANNED",
+			"banned_by": "381119976872083456",
+			"winner": null,
+			"order": 0
+		},
+		"ITB": {
+			"name": "Into The Breach",
+			"current": false,
+			"rules": [
+				"Sauver le plus de civils sur 2 iles en hard",
+				"Your pick : BRUTE & RANGED THEN your opponent picks PRIME for you."
+			],
+			"status": "PICKED",
+			"banned_by": null,
+			"winner": "381119976872083456",
+			"order": 0.6464530450774317
+		},
+		"TF": {
+			"name": "Thunder Force 4",
+			"current": false,
+			"rules": [
+				"",
+				""
+			],
+			"status": "BANNED",
+			"banned_by": "381119976872083456",
+			"winner": null,
+			"order": 0
+		},
+		"OH": {
+			"name": "Open Hexagon",
+			"current": false,
+			"rules": [
+				"Levelpack CUBE, un joueur doit dépasser les 5s",
+				"FLATTERING SHAPE"
+			],
+			"status": "PICKED",
+			"banned_by": null,
+			"winner": "381119976872083456",
+			"order": 0.740717039732413
+		},
+		"MZM": {
+			"name": "Metroid: Zero Mission",
+			"current": false,
+			"rules": [
+				"",
+				""
+			],
+			"status": "BANNED",
+			"banned_by": "381119976872083456",
+			"winner": null,
+			"order": 0
+		},
+		"PB": {
+			"name": "Power Bomberman",
+			"current": false,
+			"rules": [
+				"Stage 8",
+				"Gagner le match (tout par défaut, Saturn1"
+			],
+			"status": "PICKED",
+			"banned_by": null,
+			"winner": "381119976872083456",
+			"order": 0.10872626454354695
+		}
+	},
+	"ban": {
+		"id": 0,
+		"amount": 0,
+		"total": 12
+	}
+}

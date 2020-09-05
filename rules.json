@@ -1,69 +1,334 @@
-{	"T":{
-	  "name":"Tetris",
-	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
-    },
-    "ALTTP":{
-	  "name":"A link to the past",
-	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
-    },
-    "TT":{
-	  "name":"Tricky Towers",
-	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
-    },
-    "TM":{
-	  "name":"Trackmania",
-	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
-    },
-    "DH":{
-	  "name":"Dishonored",
-	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
-	  },
-    "SL":{
-	  "name":"SwarmLake",
-      "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
-    },
-    "IR":{
-	  "name":"Immortal Redneck",
-      "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
-    },
-    "CDG":{
-	  "name":"Curse of the dead gods",
-	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
-    },
-    "TS":{
-	  "name":"The Swindle",
-	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
-    },
-    "MMX":{
-	  "name":"Megaman X 1-3",
-	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
-    },
-    "LM":{
-	  "name":"Lonely Mountains",
-	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
-    },
-    "MM":{
-	  "name":"Mini Metro",
-	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
-    },
-    "ITB":{
-	  "name":"Into The Breach",
-	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
-    },
-    "TF":{
-	  "name":"Thunder Force 4",
-	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
-    },
-    "OH":{
-	  "name":"Open Hexagon",
-	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
-    },
-    "MZM":{
-	  "name":"Metroid: Zero Mission",
-	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
-    },
-    "PB":{
-	  "name":"Power Bomberman",
-	  "rules":[["Les règles seront données à partir de Septembre"],["Entrainez vous comme vous voulez en attendant"]]
-    }
+{
+	"T": {
+		"name": "Tetris",
+		"rules": [
+			[
+				"10 minutes pour faire le plus de lignes.",
+				"10 minutes pour faire le meilleur score.",
+				"Meilleur score en 100 lignes."
+			],
+			[
+				"Choix du level initial libre",
+				"Level 3",
+				"Level 5",
+				"Level 7",
+				"Level 9"
+			]
+		]
+	},
+	"ALTTP": {
+		"name": "A link to the past",
+		"rules": [
+			[
+				"1h15 pour compléter les objectifs !"
+			],
+			[
+				"alttp.json"
+			]
+		]
+	},
+	"TT": {
+		"name": "Tricky Towers",
+		"rules": [
+			[
+				"Versus"
+			],
+			[
+				"Random, Random, SuperCoupe",
+				"Random, Normal, SuperCoupe"
+			]
+		]
+	},
+	"TM": {
+		"name": "Trackmania",
+		"rules": [
+			[
+				"Compléter le plus d'objectifs avec 2 try par map"
+			],
+			[
+				"trackmania.json"
+			]
+		]
+	},
+	"DH": {
+		"name": "Dishonored",
+		"rules": [
+			[
+				"Compléter la mission 2 (Dishonored) sans save ni glitches majeurs en Ghost",
+				"Compléter la mission 2 (Dishonored) sans save ni glitches majeurs en non Lethal",
+				"Compléter la mission 3 (High Overseer Campbell) sans save ni glitches majeurs en non Lethal",
+				"Compléter la mission 3 (High Overseer Campbell) sans save ni glitches majeurs en Ghost",
+				"Compléter la mission 4 (House of Pleasure) sans save ni glitches majeurs en Ghost",
+				"Compléter la mission 4 (House of Pleasure) sans save ni glitches majeurs en non Lethal",
+				"Compléter la mission 5 (The Royal Physician) sans save ni glitches majeurs en non Lethal",
+				"Compléter la mission 5 (The Royal Physician) sans save ni glitches majeurs en Ghost",
+				"Compléter la mission 6 (Lady Boyle's Last Party) sans save ni glitches majeurs en Ghost",
+				"Compléter la mission 6 (Lady Boyle's Last Party) sans save ni glitches majeurs en non Lethal",
+				"Compléter la mission 7 (Return to the Tower) sans save ni glitches majeurs en non Lethal",
+				"Compléter la mission 7 (Return to the Tower) sans save ni glitches majeurs en Ghost",
+				"Compléter la mission 9 (The Loyalists) sans save ni glitches majeurs en non Lethal",
+				"Compléter la mission 9 (The Loyalists) sans save ni glitches majeurs en Ghost"
+			],
+			[
+				"Ramasser le plus de runes possible",
+				"Ramasser le plus de peintures possible",
+				"Ramasser le plus de pièces possible"
+			]
+		]
+	},
+	"SL": {
+		"name": "SwarmLake",
+		"rules": [
+			[
+				"Meilleur score"
+			],
+			[
+				"1 essai"
+			]
+		]
+	},
+	"IR": {
+		"name": "Immortal Redneck",
+		"rules": [
+			[
+				"Daily"
+			],
+			[
+				"Meilleur Score"
+			]
+		]
+	},
+	"CDG": {
+		"name": "Curse of the dead gods",
+		"rules": [
+			[
+				"Jaguar 1",
+				"Jaguar 2",
+				"Jaguar 3",
+				"Serpent 1",
+				"Serpent 2",
+				"Serpent 3"
+			],
+			[
+				"Prendre aucun dégat des ennemis",
+				"Ne pas utiliser d'arme lourde",
+				"Ne pas utiliser ou changer son arme principale",
+				"Commencer sans benediction",
+				"Ne pas ramasser de relique",
+				"Ne pas se soigner dans les salles de soin",
+				"Ne jamais faire de pacte de sang dans les shops",
+				"Ne jamais utiliser d'or dans les shops",
+				"Pas de griffes",
+				"Pas de lance",
+				"Prendre au moins un dégat à chaque étage (sauf dans les étages sans ennemis)"
+			]
+		]
+	},
+	"TS": {
+		"name": "The Swindle",
+		"rules": [
+			[
+				"Récupérer le plus d'argent possible en 20 minutes",
+				"Récupérer le plus d'argent possible en 30 minutes",
+				"Récupérer le plus d'argent possible en 40 minutes"
+			],
+			[
+				"Fin de la run quand Henry Beresford meurt",
+				"Pas de double saut",
+				"Bombes interdites",
+				"HACK 3 interdit",
+				"Pas d'amélioration de dégats"
+			]
+		]
+	},
+	"MMX": {
+		"name": "Megaman X 1-3",
+		"rules": [
+			[
+				"Compléter 7 objectifs en 45 minutes"
+			],
+			[
+				"seed : http://speedruntools.com/bingo/mmx1-3?seed=%rand6%"
+			]
+		]
+	},
+	"LM": {
+		"name": "Lonely Mountains",
+		"rules": [
+			[
+				"Track : Graterhorn 1",
+				"Track : Graterhorn 2",
+				"Track : Graterhorn 3",
+				"Track : Graterhorn 4",
+				"Track : Redmoor Peaks 1",
+				"Track : Redmoor Peaks 2",
+				"Track : Redmoor Peaks 3",
+				"Track : Redmoor Peaks 4",
+				"Track : Sierra Rivera 1",
+				"Track : Sierra Rivera 2",
+				"Track : Sierra Rivera 3",
+				"Track : Sierra Rivera 4",
+				"Track : Mount Riley 1",
+				"Track : Mount Riley 2",
+				"Track : Mount Riley 3",
+				"Track : Mount Riley 4"
+			],
+			[
+				"Bike : Grasshopper",
+				"Bike : TrailBlazer",
+				"Bike : PaceBreaker",
+				"Bike : Boar",
+				"Bike : Javelin",
+				"Bike : Geronimo"
+			]
+		]
+	},
+	"MM": {
+		"name": "Mini Metro",
+		"rules": [
+			[
+				"City : London",
+				"City : Paris",
+				"City : New York City",
+				"City : Berlin",
+				"City : Melbourne",
+				"City : Hong Kong",
+				"City : Barcelona",
+				"City : Osaka",
+				"City : Stockholm",
+				"City : Saint Petersburg",
+				"City : Montréal",
+				"City : San Francisco",
+				"City : São Paulo",
+				"City : Seoul",
+				"City : Washington, D.C.",
+				"City : Singapore",
+				"City : Cairo",
+				"City : Istanbul",
+				"City : Shanghai",
+				"City : Guangzhou",
+				"City : Mumbai",
+				"City : Auckland"
+			],
+			[
+				"Max 3 lignes",
+				"Une seule locomotive par ligne",
+				"Pas de wagon",
+				"Extreme",
+				"Une seule ligne passe par les carrés et les stations uniques",
+				"toutes les lignes passent par le carré de départ",
+				"Que des boucles"
+			]
+		]
+	},
+	"ITB": {
+		"name": "Into The Breach",
+		"rules": [
+			[
+				"Sauver le plus de civils sur 2 iles en hard"
+			],
+			[
+				"itb.json"
+			]
+		]
+	},
+	"TF": {
+		"name": "Thunder Force 4",
+		"rules": [
+			[
+				"Scoring, no continue"
+			],
+			[
+				"Level : Ruin",
+				"Level : Dazer",
+				"Level : Air-Raid",
+				"Level : Strite"
+			]
+		]
+	},
+	"OH": {
+		"name": "Open Hexagon",
+		"rules": [
+			[
+				"Levelpack CUBE, un joueur doit dépasser les 5s"
+			],
+			[
+				"POINTLESS",
+				"FLATTERING SHAPE",
+				"SECOND DIMENSION",
+				"APEIROGON",
+				"COMMANDO",
+				"EUCLIDIAN PLANE CRASH",
+				"PI",
+				"LABYRINTH",
+				"GOLDEN RATIO"
+			]
+		]
+	},
+	"MZM": {
+		"name": "Metroid: Zero Mission",
+		"rules": [
+			[
+				"Config : dv45AAAAAAAAAAAAAAAAggAgWuH - Seed : %rand9% "
+			],
+			[
+				"Tuer Kraid en moins de 45 minutes et sans mourir",
+				"Tuer Ridley en moins de 45 minutes et sans mourir",
+				"Ramasser 6 E-tank sans mourir",
+				"Avoir 8 super missiles sans mourir"
+			]
+		]
+	},
+	"PB": {
+		"name": "Power Bomberman",
+		"rules": [
+			[
+				"Stage 1",
+				"Stage 2",
+				"Stage 3",
+				"Stage 4",
+				"Stage 5",
+				"Stage 6",
+				"Stage 7",
+				"Stage 8",
+				"Stage 9",
+				"Stage 10",
+				"Stage 11",
+				"Stage 12",
+				"Stage 13",
+				"Stage 14",
+				"Stage 15",
+				"Stage 16",
+				"Stage 17",
+				"Stage 18",
+				"Stage 19",
+				"Stage 20",
+				"Stage 21",
+				"Stage 22",
+				"Stage 23",
+				"Stage 24",
+				"Stage 25",
+				"Stage 26",
+				"Stage 27",
+				"Stage 28",
+				"Stage 29",
+				"Stage 30",
+				"Stage 31",
+				"Stage 32",
+				"Stage 33",
+				"Stage 34",
+				"Stage 35",
+				"Stage 36",
+				"Stage 37",
+				"Stage 38",
+				"Stage 39",
+				"Stage 40",
+				"Stage 41",
+				"Stage 42"
+			],
+			[
+				"Gagner le match (tout par défaut, Saturn1"
+			]
+		]
+	}
 }

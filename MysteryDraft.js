@@ -287,9 +287,33 @@ function nextGame(msg){
 			var obj = rule[curGame].rules[0][Math.floor(Math.random() * rule[curGame].rules[0].length)];
 			var detail = rule[curGame].rules[1][Math.floor(Math.random() * rule[curGame].rules[1].length)];
 			if(detail.endsWith(".json")){
-				var cur_rul = require('./'+detail+'.json');
-				var amount = cur_rul.volume;
-				detail=randomizeRuleTab(amount,cur_rul.rules);
+				if(detail=="itb.json"){
+					var cur_rul = require('./'+detail);
+					var tab = cur_rul.rules;
+					tab = shuffle(tab);
+					detail = "Your pick : "+tab[0] +" & "+tab[1] + " THEN your opponent picks " + tab[Math.floor(4*Math.random())] + " for you."
+				}
+				if(detail=="trackmania.json"){
+					var cur_rul = require('./'+detail);
+					var tab = cur_rul.Tracks;
+					tab = shuffle(tab);
+					detail = "Track n°"+tab[0][0]+" - Time : "+timins(Number(tab[0][1])+Math.floor(10*Math.random()))+"\n"+
+							 "Track n°"+tab[1][0]+" - Time : "+timins(Number(tab[1][1])+Math.floor(10*Math.random()))+"\n"+
+							 "Track n°"+tab[2][0]+" - Time : "+timins(Number(tab[2][1])+Math.floor(10*Math.random()))+"\n"+
+							 "Track n°"+tab[3][0]+" - Time : "+timins(Number(tab[3][1])+Math.floor(10*Math.random()))+"\n"+
+							 "Track n°"+tab[4][0]+" - Time : "+timins(Number(tab[4][1])+Math.floor(10*Math.random()))+"\n"+
+							 "Track n°"+tab[5][0]+" - Time : "+timins(Number(tab[5][1])+Math.floor(10*Math.random()))+"\n"+
+							 "Track n°"+tab[6][0]+" - Time : "+timins(Number(tab[6][1])+Math.floor(10*Math.random()))+"\n";
+				}
+				if(detail=="alttp.json"){
+					var cur_rul = require('./'+detail);
+					var tab1 = shuffle(cur_rul.easy);
+					var tab2 = shuffle(cur_rul.medium)
+					var tab3 = shuffle(cur_rul.hard)
+					detail = tab1[0]+"\n"+
+							 tab2[0]+"\n"+
+							 tab3[0];
+				}
 			}
 			detail = detail.replace("%rand6%",Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random()));
 			detail = detail.replace("%rand9%",Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random())+""+Math.floor(10*Math.random()));
@@ -299,6 +323,21 @@ function nextGame(msg){
 			saveMatch(msg.channel.id);
 		}
 	}
+}
+
+function timins(s){
+		if(s<60){
+			return("00:"+s+".00");
+		} else{
+			if(s==60){
+				return("00:00.00");
+			}
+			if((s-60)<10){
+				return("01:0"+(s-60)+".00");
+			}else{
+				return("01:"+(s-60)+".00");
+			}
+		}
 }
 
 function randomizeRuleTab(n,tab){
